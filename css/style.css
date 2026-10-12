@@ -1,0 +1,146 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #252b28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #183d32;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+.img {
+    width: 100%;
+    max-width: 900px;
+    height: 420px;
+    border-radius: 20px;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/master.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.img:hover {
+    transform: scale(1.01);
+}
+
+
+/* poster content box  */
+#container {
+    width: 90%;
+    max-width: 700px;
+    background: #ffffff;
+    padding: 35px;
+    margin-top: -65px;
+    position: relative;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eeeeee;
+}
+
+/* Poster title */
+#container h2 {
+    font-size: 2rem;
+    color: #183d32;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+/* Poster description */
+#container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+
+/* Join button */
+#container button {
+    background: #183d32;
+    color: #ffffff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+#container button:hover {
+    background: #d6b56d;
+    color: #252b28;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+#container button:active{
+    transform: translateY(3px);
+    border-radius: 50%;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 22px;
+    }
+
+    .img {
+        height: 280px;
+        border-radius: 14px;
+    }
+
+    #container {
+        width: 95%;
+        padding: 25px 20px;
+        margin-top: -40px;
+    }
+
+    #container h2 {
+        font-size: 1.5rem;
+    }
+
+    #container p {
+        font-size: 0.9rem;
+    }
+}
+
